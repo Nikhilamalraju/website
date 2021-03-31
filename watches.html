@@ -1,0 +1,153 @@
+<html>
+    <head>
+        <title>WEBSITE PRODUCT PAGE </title>
+        <meta name="viewport" content="width=device-width, initial-scale=5">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel ="stylesheet" href="main.css">
+    <link rel ="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+    
+</head>
+
+<body>
+    
+    <div class="top-nav-bar">
+            <div class="search-box">
+                <i class="fa fa-bars" id="menu-btn" onclick="openmenu()"></i> 
+                <i class="fa fa-times" id="close-btn" onclick="closemenu()"></i> 
+           <a href="main.html"><img src="l1.jpeg" width=50px></a> 
+            <input type="text" class="form-control">
+            <span class="input-group-text"><i class="fa fa-search"></i></span>
+            </div>
+    <div class="menu-bar">
+        <ul>
+            <li><a href="">cart <i class="fa fa-shopping-cart"></i></a></li>
+            <li><a href="">Sign up</a></li>
+            <li><a href="">Log In</a></li>
+        </ul>
+    </div>
+    </div>
+    <section class="single-product">
+        <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <div id="product-slider" class="carousel slide" data-ride="carousel">
+                    <ul class="carousel-indicators">
+                        <li data-target="#slider" data-slide-to="0" class="active"></li>
+                        <li data-target="#slider" data-slide-to="1"></li>
+                        <li data-target="#slider" data-slide-to="2"></li>
+                    </ul>
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                       <img src="watch4.png" class="d-block w-100" >
+                    </div>
+                     <div class="carousel-item">
+                       <img src="watch2.png" class="d-block w-100" >
+                     </div>
+                     <div class="carousel-item">
+                       <img src="watch3.png" class="d-block w-100" >                          
+                      </div>
+                
+                    <a class="carousel-control-prev" type="button" href="#product-slider" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">previous</span> 
+                    </a>
+                      <a class="carousel-control-next" type="button" href="#product-slider" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span> 
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-md-7">
+            <p class="new-arrival text-center">NEW</p>
+            <h2>SANDA</h2>
+            <p>Women Analogue Watch DK11421-7</p>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <p class="price">2450/-</p>
+            <label>Quantity:</label>
+            <input type="text" value="1">
+            <button type="button" class="btn btn-primary">Add to Cart</button>
+            <p>Dial width: 40 mm</p>
+            <p>Strap width: 20 mm</p>
+            </div>
+            </section>
+            <br>
+            <section class="product-details">
+                <div class="container">
+                    <h4>PRODUCT DETAILS </h4>
+                    
+                    <p>Display: Analogue</p>
+                        <p>Power source: Battery</p>
+                        <p> Dial style: Solid round stainless steel dial</p>
+                        <p>Features: Reset Time</p>
+                        <p>Strap style: bracelet style, metal strap with a foldover closure</p>
+                        <p>Water resistance: 30 m</p>
+                        <p> Warranty: 2 years</p>
+                        <p>Warranty provided by brand/manufacturer
+                        Manufacture By sanda Group based in Hong Kong</p>
+                        <p>Country of origin: China</p>
+                    <h4>SPECIFICATIONS</h4>
+                    <p><b>Display:Analogue</b></p>
+                    <p><b>Movement:Quartz</b></p>
+                    <p><b>Type:regular</b></p>
+                    <p><b>Occasion:Casual</b></p>
+                    <p><b>Dial pattern:Solid</b></p>
+                    <p><b>Dial shape:Round/b></p>
+            
+                </div>
+            </section>
+        </div>
+        </div>
+    <section class ="footer">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-3">
+                   <h1>Useful Links</h1>
+                   <p>Privacy Policy</p> 
+                   <p>Terms of use</p>
+                   <p>Return policy</p>
+                </div>
+                <div class="col-md-3">
+                    <h1>company</h1>
+                    <p>About Us</p>
+                    <p>Contact Us</p>
+                    <p>Career</p>
+                </div>
+                <div class="col-md-3">
+                    <h1>Follow Us On</h1>
+                    <p><i class="fa fa-facebook-official"></i>facebook</p>
+                    <p><i class="fa fa-youtube-play"></i>Youtube</p>
+                    <p><i class="fa fa-linkedin"></i>Linkedin</p>
+                    <p><i class="fa fa-twitter"></i>twitter</p>
+                </div>
+            </div>
+        </div>
+                         
+        </section>      
+        <!-------------------------script----------->
+        <script>
+            function openmenu()
+            {
+                document.getElementById("side-menu").style.display="block";
+                document.getElementById("menu-btn").style.display="none";
+                document.getElementById("close-btn").style.display="block";     
+            }
+            function closemenu()
+            {
+                document.getElementById("side-menu").style.display="none";
+                document.getElementById("menu-btn").style.display="block";
+                document.getElementById("close-btn").style.display="none";     
+            }
+        </script>
+            
+    </body>
+    </html>
